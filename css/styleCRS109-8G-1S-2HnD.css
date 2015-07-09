@@ -1,0 +1,204 @@
+#refreshImage img{
+	width: 65%;
+}
+
+#etherGreen0 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:22.7%;
+	top:16%;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+
+#etherGreen1 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:22.6%;
+	top:-16%;
+}
+
+#etherGreen2 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:28.1%;
+	top:16%;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+
+#etherGreen3 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:28.1%;
+	top:-16%;
+}
+
+#etherGreen4 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:33.6%;
+	top:16%;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+
+#etherGreen5 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:33.6%;
+	top:-16%;
+}
+
+#etherGreen6 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:39%;
+	top:16%;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+
+#etherGreen7 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:39%;
+	top:-16%;
+}
+
+#etherGreen8 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:46%;
+	top:14%;
+}
+
+
+#etherMaster0 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:22.7%;
+	top:16%;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+
+#etherMaster1 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:22.6%;
+	top:-16%;
+}
+
+#etherMaster2 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:28.1%;
+	top:16%;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+
+#etherMaster3 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:28.1%;
+	top:-16%;
+}
+
+#etherMaster4 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:33.6%;
+	top:16%;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+
+#etherMaster5 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:33.6%;
+	top:-16%;
+}
+
+#etherMaster6 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:39.1%;
+	top:16%;
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+}
+
+#etherMaster7 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:39%;
+	top:-16%;
+}
+
+#etherMaster8 {
+	fill:#00e90f;
+	min-height: 100%;
+    	height: 100%;
+	position:absolute;
+	left:46%;
+	top:14%;
+}
+
+
+
+
+
+

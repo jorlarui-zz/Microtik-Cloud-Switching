@@ -1,0 +1,435 @@
+body{
+	background-color:#DDD;
+}
+
+/* Menu Bar */
+.navbar{
+	background-color: #080808;
+	font-family: "Open Sans";
+	text-transform: Uppercase;
+	letter-spacing: 1.25px;
+	font-size: 12px;
+}
+.navbar-text img{
+	width:85px; 
+	height:20px;
+	margin-left:20px;
+}
+.navbar-center{
+	margin-left:15%;
+}
+
+.navbar-center li{
+	margin-right:6px;
+}
+.active a{
+	color: #de0000 !important;
+}
+
+
+/* Image Switch or Router */
+
+.switch-box{
+	padding-top:40px;
+	padding-bottom:20px;
+	margin-top:10px;
+	background-color:#ffffff;
+	border:1px solid #b1b1b1;
+}
+
+.switch-box img{
+	width:100%;
+}
+
+/* Info CPU, model, uptime */
+#model {
+	
+	margin-bottom: -10px !important;
+}
+#model p{
+	display:inline;
+}
+
+#cpu div{
+	display:inline-block;
+}
+
+
+#cpu .progress{
+	width:80% !important;
+}
+
+#cpu .progress-bar{
+	background-color:#de0000;
+}
+#uptime p{
+	display:inline;
+}
+
+.infoBold{
+	font-weight:bold;
+}
+
+/* Interface Selection*/
+
+.styled-select select {
+   background: transparent;
+   width: 218px;	
+   font-size:13px;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+   }
+
+.styled-select {
+   width: 200px;
+   height: 34px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   background-color:rgba(0,0,0,0.1);
+   }
+
+.graphics #container{
+	
+	max-width:100%;
+	
+	height: 200px; 
+	margin: 0 auto;
+}
+#highcharts-0{
+	margin-left:-40px;
+}
+.info-box{
+	padding-top:20px;
+	padding-bottom:30px;
+	margin-top:10px;
+	background-color:#fff;
+	border:1px solid #b1b1b1;
+}
+
+.ports-box{
+	padding-top:20px;
+	padding-bottom:30px;
+	margin-top:10px;
+	background-color:#fff;
+}
+
+
+table{
+	 margin-left:auto; 
+    	margin-right:auto;
+	border-collapse: collapse; 
+}
+#refreshPorts{
+	margin-right:10px;
+}
+
+#refreshPorts td{
+	padding-top: 6px;
+}
+
+form{
+	margin-bottom:0px;
+	}
+
+.link-ok{
+	padding-left:20px;
+	margin-bottom:2px;
+	color:green;
+}
+
+.no-link{
+	padding-left:20px;
+	margin-bottom:2px;
+	color:#DE0000;
+}
+#refreshPorts{
+	font-size:14px;
+}
+
+input[type=submit] {
+	font-size:14px;
+	margin-top:3px;
+	margin-right:8px;
+	padding:0.5px 5px; 
+	background-color:rgba(0,0,0,0.1);
+	 border:1px solid #ccc;
+	cursor:pointer;
+	 }
+
+#interface{
+	display:none;
+}
+
+/* Zoom Classes */
+.hideElement{
+	display:none;
+}
+
+.maxBox{
+	width: 100% !important;
+	min-width:100% !important;
+}
+
+.colMax{
+	min-width:100% !important;
+}
+
+
+.buttonIn, .buttonOut {
+	width: 100px;
+	margin:0 auto !important;
+	border: 1px solid #ccc;
+	background-color:rgba(0,0,0,0.1);
+}
+
+
+/*-----------------Switch.php-----------------*/
+
+.switchTable{
+	font-size:13px;
+}
+
+.switchTable td{
+	padding-left:10px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+/* Interface Selection*/
+
+.styled-selectSwitch select {
+   background: transparent;
+   width: 150px;	
+   font-size:13px;
+   border: 0;
+   border-radius: 0;
+   height: 25px;
+   -webkit-appearance: none;
+   }
+
+.styled-selectSwitch {
+   width: 130px;
+   height: 25px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   background-color:rgba(0,0,0,0.1);
+   }
+
+/*-----------------Vlans.php-----------------*/
+
+.tablePortsCR{
+	font-size:13px;
+	margin-bottom: 30px;
+}  
+
+.tablePortsCR td{
+	
+	padding-left:25px;
+	padding-top:2px;
+}  
+
+ 
+input[class=buttonDisable] {
+	font-size:10px !important;
+	 }
+
+#refreshVlans h3{
+	margin-top:10px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	text-decoration:underline;
+	text-align:center;
+	font-weight: bold;
+}
+
+/*-----------------Ports.php-----------------*/
+
+
+.portsBox form{
+	font-size:13px;
+}
+
+.tablePorts td{
+	font-size:13px;
+	padding-left: 30px;
+}
+
+.tablePortsCR td{
+	font-size:13px;
+	padding-left: 30px;
+}
+
+
+/*-----------------Routing.php-----------------*/
+
+
+.tableRouting td,th{
+	font-size:13px;
+	padding-left: 30px;
+	padding-left:25px;
+	padding-top:2px;
+	padding-bottom:2px;
+	text-align:center;
+}  
+.tableRouting{
+	margin-bottom:50px;
+}
+.routingBox{
+	font-size: 12px;
+	padding-left: 50px;
+}
+
+#refreshPorts h3{
+	margin-bottom:15px;
+	font-size: 13px;
+	text-decoration:underline;
+	text-align:center;
+	font-weight: bold;
+}
+
+.routingBox h3{
+	margin-bottom:15px;
+	font-size: 13px;
+	text-decoration:underline;
+	font-weight: bold;
+
+	}
+
+.gateway {
+display: inline;
+}
+.gateway input{
+	width: 50%;
+	margin-top: -35px;
+	
+}
+
+.styled-selectRouting select {
+	
+   background: transparent;
+   width: 118px;	
+   font-size:13px;
+   border: 0;
+   border-radius: 0;
+   height: 24px;
+   -webkit-appearance: none;
+   }
+
+.styled-selectRouting {
+   display: inline-block;
+   width: 100px;
+   height: 24px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   background-color:rgba(0,0,0,0.1);
+   }
+
+
+/*-----------------ACL.php-----------------*/
+
+.ACLBox form{
+	font-size: 13px;
+}
+
+.styled-selectACL select {
+   background: transparent;
+   width: 118px;	
+   font-size:13px;
+   border: 0;
+   border-radius: 0;
+   height: 24px;
+   -webkit-appearance: none;
+   }
+
+.styled-selectACL {
+   display: inline-block;
+   width: 100px;
+   height: 24px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   background-color:rgba(0,0,0,0.1);
+   }
+.buttonACL{
+	text-align:center;
+	margin-top:10px;
+}
+#refreshACLs h3{
+	margin-bottom:15px;
+	margin-top: 40px;
+	font-size: 16px;
+	text-decoration:underline;
+	text-align:center;
+	font-weight: bold;
+
+}
+.ACLTable td{
+	font-size:13px;
+	padding-left:15px;
+	padding-right:15px;
+}
+.ACLRules {
+	margin-top:10px;
+}
+
+.ACLRules td,th{
+	font-size:13px;
+	padding-right:30px;
+	padding-left: 30px;
+}
+
+#permit{
+	font-weight: bold;
+	color: green !important;
+}
+ #deny{
+	font-weight: bold;
+	color: red !important;
+}
+
+/*-----------------Help.index-----------------*/
+.jumbotron iframe{
+
+	margin: 0 auto;
+}
+.help-box{
+	padding-top:40px;
+	padding-bottom:20px;
+	margin-top:10px;
+	background-color:#ffffff;
+	border:1px solid #b1b1b1;
+}
+
+.help-box div{
+	margin-top:30px;
+}
+
+.three{
+	margin-left: 3%;
+	font-size:12px;
+	border:1px solid #b1b1b1;
+	width:200px;
+}
+
+.help-box img{
+	 display: block;
+	margin: 0 auto;
+}
+
+.tabulated{
+	text-indent: 5em;
+}
+
+.dobleTabulated{
+	text-indent: 10em;
+}
+.underline{
+	text-decoration: underline;
+}
+
+.logo{
+	display: inline !important;
+	margin:0 !important;
+}
+

@@ -1,0 +1,443 @@
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<html>
+<head>
+	<title>Mikrotik Web Controller</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+
+
+	
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <p class="navbar-text"><img src="images/logolittle.png"></p>
+        </div>
+       
+        <div id="navbar" class="collapse navbar-collapse">
+
+	    <ul class="nav navbar-nav navbar-right">
+                <li><a id="logOut" href="index.php">Back to Login</a></li>
+            </ul>
+        </div> 
+    	</div>
+    </nav>
+
+
+
+<div class="container" style="margin-top:50px;">
+	
+	<div class="jumbotron">
+  		<h1></h1>
+  			<p>Mikrotik Switching API is a open source web project for developing VLANs easily to Mikrotik devices.</p>
+  		<p><iframe width="540" height="310" src="http://www.wideo.co/embed/9387391430991834033?height=300&width=500" frameborder="0" style="display:block;"></iframe></p>
+		
+	</div>
+	
+
+      	<div class="row">
+		
+		<div class="col-lg-12 help-box">
+			<h2>Getting Started</h2>
+			<ul class="content">
+ 				<li><a href="Help.html#instalation">INSTALATION</a></li>
+				<ul>
+				<li><a href="Help.html#download">Download</a></li>
+				<li><a href="Help.html#instalation2">Instalation</a></li>
+				<li><a href="Help.html#accessing">Accessing to the API</a></li>	
+				<li><a href="Help.html#supported">Supported devices</a></li>			
+				<li><a href="Help.html#included">What's included?</a></li>
+				
+				</ul>
+			
+				<li><a href="Help.html#usage">USAGE</a></li>
+				<ul>
+				<li><a href="Help.html#login">Login</a></li>
+				<li><a href="Help.html#status">Status</a></li>
+				<li><a href="Help.html#switch">Switch</a></li>
+				<li><a href="Help.html#vlans">VLANs</a></li>
+				<li><a href="Help.html#ports">Ports</a></li>
+				<li><a href="Help.html#routing">Routing</a></li>
+				<li><a href="Help.html#acls">ACLs</a></li>
+				</ul>
+
+				<li><a href="Help.html#examples">EXAMPLES</a></li>
+				<ul>				
+				<li><a href="Help.html#example1">Example 1: 1 switch example (Access)</a></li>
+				<li><a href="Help.html#example2">Example 2: 2 switch example (Access and Trunk)</a></li>
+				<li><a href="Help.html#example3">Example 3: 2 switch and 1 router example (Access and Trunk different devices)</a></li>
+				</ul>
+</ul>
+				
+</ul>
+		</div>
+
+
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12 help-box">
+			
+			<div id='instalation'><a name='instalation'></a>
+				<h2>INSTALATION</h2>
+				<div id='download'><a name='download'></a>
+				<h3>Download</h3>		
+					The API can be downloaded for free here:  <p><a class="btn btn-primary btn-lg" href="https://github.com/leonishan/TFC" role="button">Download</a></p>
+				</div>
+				</div>
+				<div id='instalation2'><a name='instalation2'></a>
+				<h3>Instalation</h3>
+				To use the API a PHP server is required. It can be downloaded for free for many platforms and options:</br></br>
+
+				<b>Linux:</b> Install a LAMP (Linux, Apache, MySQL, PHP) server. Installation varies according by the distribution. Install the appropiate according the software.</br></br>	
+				<b>Windows:</b> <a href="http://www.wampserver.com/en/">Wamp server<img class="logo" src="images/helpImages/wamp.jpg" alt="wamp" width="50px" height="30px" /></a></br></br>
+				<b>Mac OS:</b> <a href="https://www.mamp.info/en/">Mamp server<img class="logo" src="images/helpImages/mamp.png" alt="wamp" width="40px" height="30px" /></a></br> </br>
+
+				</div>
+
+				<div id='accessing'><a name='accessing'></a>
+				<h3>Accessing to the API</h3>
+				<p>Once performed the installation, make sure the platform with the web server, the Mikrotik device to be configured and the device that is going to be used to interact with the PHP server are in the same network or can reach it.</p>
+</p>
+For example:</br></br>
+
+<b>LAN:</b></br>
+	PHP server (192.168.1.10/24)</br>
+	Mikrotik device (192.168.1.1/24)</br>
+	Computer to interact with PHP server (192.168.1.100/24)</br>
+</br>
+
+<b>WAN:</b></br>
+	PHP server (192.168.1.10/24)</br>
+	Mikrotik device (84.120.30.50/20)</br>
+	Computer to interact with PHP server (192.168.1.100/24)</br>
+</p>
+Is recommended to access locally or through a VPN.
+
+				</div>
+				<div id='supported'><a name='supported'></a>
+				<h3>Supported devices</h3>
+				<p>PHP API can be supported by computes, mobiles and tablets which have access to the PHP server.</p>
+				</div>
+
+				<div id='included'><a name='included'></a>
+				<h3>What's included?</h3>
+
+				<p class='three'>
+				+boostrap</br>
+				+css</br>
+				+highcharts</br>
+				+images</br>
+				-ACLs.php</br>
+				-Help.html</br>
+				-Login.php</br>
+				-Routing.php</br>
+				-Status.php</br>
+				-Switch.php</br>
+				-Vlans.php</br>
+				-datosCPU.php</br>
+				-datosGraficas.php</br>
+				-datosRouting.php</br>
+				-datosRules.php</br>
+				-datosStatus.php</br>
+				-datosStatusImage.php</br>
+				-datosSwitch.php</br>
+				-datosSwitchImage.php</br>
+				-datosVlans.php</br>
+				-datosVlansImage.php</br>
+				-routeros_api.class.php</br>
+
+				</p>
+				</div>
+		</div>
+	</div>
+		
+	<div class="row">	
+		<div class="col-lg-12 help-box">
+			<div id='usage'><a name='usage'></a>
+				<h2>USAGE</h2>
+				<div id='login'><a name='login'></a>
+				<h3>Login</h3>
+				<p>
+				Access page. The user has to enter the IP, user and password of the device to be connected. The server must reach the device, and the user and password must be valid. If the password is blank, left the input blank.</br>
+
+If the server can't connect the device an error message will be displayed. Please check if the web API have permissions (Winbox - IP - Services) and the connection data is correct.</p>
+<img src="images/helpImages/Login.png" alt="Login"/>
+
+				</div>
+				
+				<div id='status'><a name='status'></a>
+				<h3>Status</h3>
+			<p>Shows the status of the device and their ports. It has two parts:</p>
+<p>
+<b>Top part:</b>
+<ul>
+	<li>Device status: </br>
+			<p class="tabulated">Displays the status of the ports. </p>
+			<p class="tabulated">Green port indicates that the link is running.</p>
+			<p class="tabulated">The green 'm' icon, indicates that the port is a master-port.</p></li>
+			<img src="images/helpImages/Status3.png" alt="Device status"/>
+	<li>Info Box: 
+			<p class="tabulated">Shows information of the device: model, CPU load and up-time.</p></li>
+			<img src="images/helpImages/Info.png" alt="Info Box"/>
+</ul>			
+</p>
+
+<b>Bottom part:</b>
+<ul>
+	<li>Traffic interface graph:</br>
+			<p class="tabulated">Displays the traffic information of the selected interface in a graph.</p>
+			<p class="tabulated">Red shows upload traffic.</p>
+			<p class="tabulated">Black shows download traffic.</p></li>
+			<img src="images/helpImages/Status1.png" alt="Traffic interface graph"/>
+			
+	<li>Enable/Disable ports:</br>
+			<p class="tabulated">Shows if the link is running or not.</p>
+			<p class="tabulated">Gives the option to enable/disabled the desired port.</p></li>
+			<img src="images/helpImages/Status2.png" alt="Enable/Disable ports"/>
+			
+</ul>
+
+			</div>
+
+			<div id='switch'><a name='switch'></a>
+				<h3>Switch</h3>
+			<p>Shows information about the commutation of the ports. It has two parts:</p>
+<p>
+<b>Top part:</b>
+<ul>
+		
+	<li>Switch status: </br>
+			<p class="tabulated">Displays the active ports and the color of each port depending on its switch.  </p>
+			<p class="tabulated">The 'm' icon, indicates that the port is a master-port.</p></li>
+			<img src="images/helpImages/Switch3.png" alt="Switch status"/>
+	<li>Info Box: 
+			<p class="tabulated">Shows information of the device: model, CPU load and up-time.</p></li>
+</ul>			
+</p>
+
+<b>Bottom part:</b>
+<ul>
+	<li>Switch Distribution:</br>
+			<p class="tabulated">Displays the distribution of each switch and its interfaces.</p>
+			<p class="tabulated">Each switch has his own color that correspond with the color of the active port in the switch status.</p></li>
+			<img src="images/helpImages/Switch1.png" alt="Switch Distribution"/>
+			
+	<li>Enable/Disable ports:</br>
+			<p class="tabulated">Gives the option to select the master-port of each switch to form new switches.</p>
+			<p class="tabulated underline">Only can be a master-port for each switching group.</p></li>
+			<img src="images/helpImages/Switch2.png" alt="Enable/Disable ports"/>
+			
+</ul>
+
+			</div>
+
+			<div id='vlans'><a name='vlans'></a>
+				<h3>VLANs</h3>
+			<p>Shows information about the VLANs of each port. It has two parts:</p>
+<p>
+<b>Top part:</b>
+<ul>
+		
+	<li>VLANs status:  </br>
+			<p class="tabulated">Displays the tag (No Switchport, Access or Trunk) of the active port depending on its configuration.  </p></li>
+			<img src="images/helpImages/Ports1.png" alt="Port status"/>
+	<li>Info Box: 
+			<p class="tabulated">Shows information of the device: model, CPU load and up-time.</p></li>
+</ul>			
+</p>
+
+<b>Bottom part:</b>
+<ul>
+	<li>Ports Distribution:</br>
+			<p class="tabulated">Displays the distribution of each Port depending on Access or Trunk and its VLANs.</p>
+			<p class="tabulated">Gives the option to reset each Port to the default configuration.</p></li>
+			<img src="images/helpImages/VLAN2.png" alt="VLANs Distribution"/>
+			</li>
+	<li>Form VLANs:</br>
+			<p class="tabulated">Gives the option to set the desired Port in mode Access, Trunk or No Switchport.</p>
+			<p class="tabulated underline">If the desired option is Access is needed to stablish the Access VLAN.</p>
+			<p class="tabulated underline">If the desired option is Trunk is needed to stablish the allowed VLAN or VLANs.</p>
+			<p class="tabulated underline">If the desired option is No Switchport an optional IP can be stablished.</p>
+			</li>
+			<img src="images/helpImages/VlanRB.png" alt="Form VLANS Routerboard"/>
+			
+</ul>
+
+
+			</div>
+
+			<div id='routing'><a name='routing'></a>
+				<h3>Routing</h3>
+			<p>Shows information about the routing of each port. It has two parts:</p>
+<p>
+<b>Top part:</b>
+<ul>
+		
+	<li>Device status: </br>
+			<p class="tabulated">Displays the status of the ports.   </p>
+			<p class="tabulated">Green port indicates that the link is running.    </p>
+			<p class="tabulated">The green 'm' icon, indicates that the port is a master-port.   </p>
+			</li>
+			
+	<li>Info Box: 
+			<p class="tabulated">Shows information of the device: model, CPU load and up-time.</p></li>
+</ul>			
+</p>
+
+<b>Bottom part:</b>
+<ul>
+	<li>Routing info:</br>
+			<p class="tabulated">Shows information about the VLAN interface (VLAN ID, Interface and the IP address), used to route the VLANs.</p>
+			<p class="tabulated">Gives the option to delete the VLAN interface and the IP Address associated.</p></li>
+			<p class="tabulated">Also shows information about the static and dynamic routes.</p>
+			<p class="tabulated">Gives the option to delete the desired route.</p></li>
+			<img src="images/helpImages/Routing1.png" alt="Routing info"/>
+			</li>
+	<li>Form Routing:</br>
+			<p class="tabulated">Gives the option to create the VLAN interface to route the VLANs.</p>
+			<p class="tabulated">Is needed  the interface by which hangs the VLAN, an ID, a name, an IP address.</p>
+			<p class="tabulated underline">Only can be a VLAN interface with the same ID, if the user want to edit it, delete and create a new one.</p>
+			<p class="tabulated">Also gives the option to create routes.</p>
+			<p class="tabulated">Is needed the destination address and the gateway.</p>
+
+			</li>
+			<img src="images/helpImages/Routing2.png" alt="Form Routing"/>
+			
+</ul>
+
+			</div>
+
+			
+			<div id='acls'><a name='acls'></a>
+				<h3>ACLs</h3>
+			<p>Shows information about firewall rules. It has two parts:</p>
+<p>
+<b>Top part:</b>
+<ul>
+		
+	<li>Device status: </br>
+			<p class="tabulated">Displays the status of the ports.   </p>
+			<p class="tabulated">Green port indicates that the link is running.    </p>
+			<p class="tabulated">The green 'm' icon, indicates that the port is a master-port.   </p>
+			</li>
+			
+	<li>Info Box: 
+			<p class="tabulated">Shows information of the device: model, CPU load and up-time.</p></li>
+</ul>			
+</p>
+
+<b>Bottom part:</b>
+<ul>
+	<li>Rules creation:</br>
+			<p class="tabulated">Gives the option to create a firewall rules to permit/deny the traffic between VLAN interfaces.
+			<p class="tabulated underline">The chain by default is 'forward' because the objective is to filter VLANs.</p>
+			</li>
+			<img src="images/helpImages/ACL1.png" alt="Rules creation"/>
+			
+	<li>Rules information:</br>
+			<p class="tabulated">Shows information about the firewall rules in a table: src. VLAN, action, dst.VLAN.</p>
+			
+			</li>
+			<img src="images/helpImages/ACL2.png" alt="Rules information"/>
+			
+</ul>
+
+			</div>
+
+
+			</div>
+
+
+			</div>
+
+<div class="row">
+		
+		<div class="col-lg-12 help-box">
+			<div id='examples'><a name='examples'></a>
+			<h2>Examples</h2>
+			<div id='example1'><a name='example1'></a>
+			<h3>Example 1</h3>
+			<p>Only one switch and a communication between VLANs will be established.</p>
+			<img src="images/helpImages/case1Short.png" alt="Case 1"/>
+			<ul>
+				<li>1- Check if ports are active. (Status)</li>
+				<li>2- Check if involved ports are in the same switch. (Switch)</li>
+				<li>3- Desired Ports mode Access. (VLANs)</li>
+				<img src="images/helpImages/Example1-2.png" alt="Step 4"/>
+				<li>4- Set 'switch-cpu' mode Trunk to allow traffic between the same Switch. (Ports)</li>
+				<img src="images/helpImages/Example1-3.png" alt="Step 5"/>
+				<li>5- Give IP Address to the devices and check connection.</li>
+				
+			</ul>
+
+			</div>
+
+			<div id='example2'><a name='example2'></a>
+			<h3>Example 2</h3>
+			<p>Two switches and a communication between VLANs will be established through switch.</p>
+			<img src="images/helpImages/case2Short.png" alt="Case 1"/>
+			<ul>
+				<li>1- Check if ports are active. (Status)</li>
+				<li>2- Check if involved ports are in the same switch  in each device. (Switch)</li>
+				<li>3- Desired Ports mode Access in each device. (Ports)</li>
+				<li>4- Set 'switch-cpu' and the desired port to make Trunk of each device in mode Trunk. (Ports)</li>
+				<img src="images/helpImages/Example2-2.png" alt="Step 5"/>
+				<li>5- Give IP Address to the devices and check connection.</li>
+				
+			</ul>
+
+			</div>
+			</div>
+
+			<div id='example3'><a name='example3'></a>
+			<h3>Example 3</h3>
+			<p>Two switches and a router.A communication between VLANs will be established through switch and the router.</p>
+			<img src="images/helpImages/case3.png" alt="Case 1"/>
+			Cloud Router Switch:
+			<ul>
+			
+				<li>1- Check if ports are active. (Status)</li>
+				<li>2- Check if involved ports are in the same switch  in each device. (Switch)</li>
+				<li>3- Desired Ports mode Access in each device. (Ports)</li>
+				<li>4- Set 'switch-cpu' and the desired port to make Trunk of each device in mode Trunk. (Ports)</li>
+
+
+				
+			</ul>
+			RouterBoard:
+			<ul>
+			
+				<li>1- Check if ports are active. (Status)</li>
+				<li>2- Set interface of the desired port to make Trunk in mode Trunk.</li>
+				<li>3- Set a VLAN interface (name, ID and interface) and an IP Address to enroute traffic. (Routing)</li>
+				<img src="images/helpImages/Fallback.png" alt="Step 3"/>
+				<li>4- Give IP Address to the devices and check connection.</li>
+
+
+				
+			</ul>
+
+			</div>
+			</div>
+		</div>
+</div>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>	
+
+
+</body>
+</html>
